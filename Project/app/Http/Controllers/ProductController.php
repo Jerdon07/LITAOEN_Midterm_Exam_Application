@@ -11,12 +11,12 @@ class ProductController extends Controller
     {
         $this -> products = [
             ["id" => 1, "name" => "Konosuba", "tag" => "Isekai"],
-            ["id" => 1, "name" => "Solo Leveling", "tag" => "Action"]
+            ["id" => 2, "name" => "Solo Leveling", "tag" => "Action"]
         ];
     }
 
     public function index()
     {
-        return view('products', ['products' => $this-> products]);
+        return view('anime  ', ['products' => $this-> products]);
     }
 }
